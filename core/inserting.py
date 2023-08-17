@@ -16,14 +16,14 @@ stmt = insert(users_table)
 #         stmt,
 #         [
 #             {
-#                 "name": "Harry",
-#                 "fullname": "Harry Karthik",
-#                 "email_id": "harrykarthik.01@gmail.com",
+#                 "name": "Steve",
+#                 "fullname": "Jobs",
+#                 "email_id": "stevejobs@gmail.com",
 #             },
 #             {
-#                 "name": "Abinaya",
-#                 "fullname": "Abinaya Madhaiyan",
-#                 "email_id": "abinayamadthaiyan@gmail.com",
+#                 "name": "Steve",
+#                 "fullname": "Steve Smith",
+#                 "email_id": "stevesmith@email.com",
 #             },
 #         ],
 #     )
@@ -35,8 +35,8 @@ with engine.connect() as conn:
         stmt,
         {
             "name": "Arun",
-            "fullname": "Arun Madhaiyan",
-            "email_id": "arunmadhaiyan.ic@gmail.com",
+            "fullname": "Arun Mad",
+            "email_id": "arunmad@xyc.com",
         },
     )
     conn.commit()

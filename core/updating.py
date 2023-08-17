@@ -5,7 +5,7 @@ from sqlalchemy import update
 stmt = (
     update(users_table)
     .where(users_table.c.fullname == "Abinaya Madhaiyan")
-    .values(email_id="abinayamadhaiyan.maths@gmail.com", name="Abinaya")
+    .values(fullname="jeemad", name="jeeva")
 )
 
 print(stmt)

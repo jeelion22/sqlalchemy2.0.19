@@ -6,7 +6,7 @@ from sqlalchemy import select
 stmt = (
     select(Comment)
     .join(Comment.user)
-    .where(User.username == "Jeeva")
+    .where(User.username == "eva")
     .where(Comment.text == "easy learn sqlalchemy")
 )
 

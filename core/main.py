@@ -85,8 +85,8 @@ with engine.connect() as conn:
     result = conn.execute(
         insert(address_table).values(user_id=scalar_subq),
         [
-            {"username": "Harry", "email_address": "harrykarthik.01@gmail.com"},
-            {"username": "Poorna", "email_address": "poornashri@gmail.com"},
+            {"username": "Harry", "email_address": "harry@gmail.com"},
+            {"username": "Poorna", "email_address": "poorna@gmail.com"},
         ],
     )
     conn.commit()
